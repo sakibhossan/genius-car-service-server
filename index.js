@@ -20,6 +20,7 @@ async function run() {
     try {
         await client.connect();
         const serviceCollection = client.db('giniusCar').collection('service');
+        const orderCollection = client.db('giniusCar').collection('order');
 
         app.get('/service', async (req, res) => {
             const query = {};
@@ -49,6 +50,11 @@ async function run() {
 
 
         });
+        // order collection api
+        app.post('/order', async (req,res)=>{
+            
+
+        })
 
 
 

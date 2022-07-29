@@ -127,9 +127,9 @@ run().catch(console.dir);
 app.get('/', (req, res) => {
     res.send('runnning ginius server');
 });
-app.get('/',(req, res)=>{
-    res.send('Hero means heroku')
-})
+app.get('/hero', (req, res)=>{
+res.send('Hero mean heroku')
+});
 
 app.listen(port, () => {
     console.log('Listening to port', port);
